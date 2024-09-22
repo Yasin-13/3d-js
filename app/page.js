@@ -43,7 +43,7 @@ export default function Home() {
   <OrbitControls 
     enableZoom={true} 
     minDistance={30} // Set this lower to allow zooming out more
-    maxDistance={50} // Increase this to allow more distance
+    maxDistance={20} // Increase this to allow more distance
     enablePan={true} 
     target={[0, 0, 0]} 
   />
