@@ -38,18 +38,17 @@ export default function Home() {
 
   return (
     <div className="relative h-[100vh] w-[100vw] bg-white">
-<Canvas camera={{ position: [0, 80, 80], fov: 50 }}>
-  <Environment preset="studio" />
-  <OrbitControls 
-    enableZoom={true} 
-    minDistance={30} // Set this lower to allow zooming out more
-    maxDistance={20} // Increase this to allow more distance
-    enablePan={true} 
-    target={[0, 0, 0]} 
-  />
-  <College onClassClick={handleClassClick} />
-</Canvas>
-
+      <Canvas camera={{ position: [0, 80, 80], fov: 50 }}>
+        <Environment preset="studio" />
+        <OrbitControls 
+          enableZoom={true} 
+          minDistance={20} // Adjusted for better mobile control
+          maxDistance={100} // Adjusted for better mobile control
+          enablePan={true} 
+          target={[0, 0, 0]} 
+        />
+        <College onClassClick={handleClassClick} />
+      </Canvas>
       {renderTimetable()}
     </div>
   );
