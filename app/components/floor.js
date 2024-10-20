@@ -6,7 +6,7 @@ import { Environment, OrbitControls } from "@react-three/drei";
 import { College } from './components/college';
 import Blog from './components/Blog';
 
-export default function Home() {
+export default function floor() {
   const [selectedClass, setSelectedClass] = useState(null);
 
   const handleClassClick = (className) => {
@@ -15,7 +15,7 @@ export default function Home() {
 
   const renderTimetable = () => {
     if (!selectedClass) return null;
-
+  
     // Mock timetables for the example, replace with your actual timetable data
     const timetables = {
       Class1: ['Math', 'English', 'History'],
@@ -39,7 +39,6 @@ export default function Home() {
 
   return (
     <div className="relative h-[100vh] w-[100vw] bg-white">
-      <Blog />
       <Canvas camera={{ position: [0, 80, 80], fov: 50 }}>
         <Environment preset="studio" />
         <OrbitControls 
