@@ -29,7 +29,7 @@ function Model({ url }) {
 
 export default function ModelLoader() {
   return (
-    <Canvas camera={{ position: [0, 100, 150], fov: 50 }}>
+    <Canvas camera={{ position: [0, 80, 80], fov: 55 }}>
       <Suspense fallback={null}>
         <ambientLight intensity={0.8} />
         <pointLight position={[20, 30, 20]} intensity={2} />

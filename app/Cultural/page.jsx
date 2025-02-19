@@ -32,54 +32,67 @@ const CollegeEventsPage = () => {
           </div>
 
           <div className="mt-10 grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
-            {/* Event Card 1 */}
+           
+
+            
+
+            {/* Event Card 4 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img
                 className="w-full h-48 object-cover"
-                src="https://example.com/event1.jpg"
-                alt="Event 1"
+                src="/a.jpeg"
+                alt="Antarang Event"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900">Spring Festival</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Antarang Events</h3>
                 <p className="mt-2 text-gray-600">
-                  Join us for a celebration of spring with music, dance, and food from around the world.
+                  "Antarang" is an initiative brought to you by the Counselling Department of A.P. Shah Institute of Technology.
+                  In this fast paced of life, people have stopped exploring their own self, whereas all the answers to life are within them!
+                  This is an event, wherein individual, through self-scrutiny, get an opportunity to connect with their true selves!
+                  Through this one will:
+                  <ul className="list-disc pl-5">
+                    <li>Heal and discover insights about the own self</li>
+                    <li>Learn the necessary skills for a happy and peaceful life</li>
+                    <li>Undergo self transformation</li>
+                  </ul>
                 </p>
-                <p className="mt-4 text-gray-500">Date: March 20, 2025</p>
-                <p className="mt-1 text-gray-500">Location: Main Quad</p>
               </div>
             </div>
 
-            {/* Event Card 2 */}
+            {/* Event Card 5 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img
                 className="w-full h-48 object-cover"
-                src="https://example.com/event2.jpg"
-                alt="Event 2"
+                src="/n.jpeg"
+                alt="NSS Event"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900">Cultural Night</h3>
+                <h3 className="text-2xl font-bold text-gray-900">NSS Events & Activities</h3>
                 <p className="mt-2 text-gray-600">
-                  Experience the diverse cultures of our student body through performances and exhibitions.
+                  The motto of National Service Scheme is NOT ME BUT YOU. Benefits of Being a NSS Volunteer:
+                  A NSS volunteer who takes part in the community service programme would either be a college level or a senior secondary level student.
+                  Being an active member these student volunteers would have the exposure and experience to be the following:
+                  <ul className="list-disc pl-5">
+                    <li>An accomplished social leader</li>
+                    <li>An efficient administrator</li>
+                    <li>A person who understands human nature</li>
+                  </ul>
                 </p>
-                <p className="mt-4 text-gray-500">Date: April 15, 2025</p>
-                <p className="mt-1 text-gray-500">Location: Student Center</p>
               </div>
             </div>
 
-            {/* Event Card 3 */}
+            {/* Event Card 6 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img
                 className="w-full h-48 object-cover"
-                src="https://example.com/event3.jpg"
-                alt="Event 3"
+                src="/o.jpeg"
+                alt="Ojus Cultural Event"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900">Art Exhibition</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Ojus Cultural Events</h3>
                 <p className="mt-2 text-gray-600">
-                  Explore the creativity of our students through their artwork displayed in the campus gallery.
+                  Follow us on Instagram: <a href="https://www.instagram.com/ojus_apsit?igsh=MWkxcHFzOG1vcmc2ZQ==" className="text-blue-500">Ojus APSIT</a>
                 </p>
-                <p className="mt-4 text-gray-500">Date: May 10, 2025</p>
-                <p className="mt-1 text-gray-500">Location: Campus Gallery</p>
               </div>
             </div>
           </div>

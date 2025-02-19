@@ -32,54 +32,49 @@ const CollegeEventsPage = () => {
           </div>
 
           <div className="mt-10 grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
-            {/* Event Card 1 */}
+           
+            {/* Technical Event Card 1 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img
                 className="w-full h-48 object-cover"
-                src="https://example.com/event1.jpg"
-                alt="Event 1"
+                src="/cs.jpeg"
+                alt="Cybersecurity Club"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900">Spring Festival</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Cybersecurity Club</h3>
                 <p className="mt-2 text-gray-600">
-                  Join us for a celebration of spring with music, dance, and food from around the world.
+                  Follow us on Instagram: <a href="https://www.instagram.com/cybersecurityclub_apsit?igsh=MTU0NDZ3M2JnbHJ1Mg==" className="text-blue-500">Cybersecurity Club APSIT</a>
                 </p>
-                <p className="mt-4 text-gray-500">Date: March 20, 2025</p>
-                <p className="mt-1 text-gray-500">Location: Main Quad</p>
               </div>
             </div>
 
-            {/* Event Card 2 */}
+            {/* Technical Event Card 2 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img
                 className="w-full h-48 object-cover"
-                src="https://example.com/event2.jpg"
-                alt="Event 2"
+                src="/d.jpeg"
+                alt="DevOps Club"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900">Cultural Night</h3>
+                <h3 className="text-2xl font-bold text-gray-900">DevOps Club</h3>
                 <p className="mt-2 text-gray-600">
-                  Experience the diverse cultures of our student body through performances and exhibitions.
+                  Follow us on Instagram: <a href="https://www.instagram.com/devopsclub_apsit?igsh=eXd5dDM5NHVtdnFo" className="text-blue-500">DevOps Club APSIT</a>
                 </p>
-                <p className="mt-4 text-gray-500">Date: April 15, 2025</p>
-                <p className="mt-1 text-gray-500">Location: Student Center</p>
               </div>
             </div>
 
-            {/* Event Card 3 */}
+            {/* Technical Event Card 3 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img
                 className="w-full h-48 object-cover"
-                src="https://example.com/event3.jpg"
-                alt="Event 3"
+                src="c.jpeg"
+                alt="AI & ML Club"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900">Art Exhibition</h3>
+                <h3 className="text-2xl font-bold text-gray-900">AI & ML Club</h3>
                 <p className="mt-2 text-gray-600">
-                  Explore the creativity of our students through their artwork displayed in the campus gallery.
+                  Follow us on Instagram: <a href="https://www.instagram.com/aimlsa_apsit?igsh=MXFhNWN3M3l1aWd0ZQ==" className="text-blue-500">AI & ML Club APSIT</a>
                 </p>
-                <p className="mt-4 text-gray-500">Date: May 10, 2025</p>
-                <p className="mt-1 text-gray-500">Location: Campus Gallery</p>
               </div>
             </div>
           </div>
