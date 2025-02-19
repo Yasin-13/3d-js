@@ -29,7 +29,7 @@ function Model({ url }) {
 
 export default function ModelLoader() {
   return (
-    <Canvas camera={{ position: [0, 80, 100], fov: 20 }}>
+    <Canvas camera={{ position: [0, 80,100], fov: 10 }}>
       <Suspense fallback={null}>
         {/* Improved Lighting */}
         <ambientLight intensity={1} />
