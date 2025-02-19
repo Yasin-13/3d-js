@@ -15,12 +15,12 @@ function Model({ url }) {
       const size = box.getSize(new THREE.Vector3());
       const center = box.getCenter(new THREE.Vector3());
 
-      // Center the model properly
-      scene.position.set(-center.x, -center.y, -center.z);
+      scene.position.x += -center.x;
+      scene.position.y += -center.y;
+      scene.position.z += -center.z;
 
-      // Increase scale to make it appear bigger
       const maxDim = Math.max(size.x, size.y, size.z);
-      scene.scale.setScalar(12 / maxDim);
+      scene.scale.setScalar(8 / maxDim);
     }
   }, [scene]);
 
@@ -29,20 +29,16 @@ function Model({ url }) {
 
 export default function ModelLoader() {
   return (
-    <Canvas camera={{ position: [0, 80,100], fov: 10 }}>
+    <Canvas camera={{ position: [0, 80, 80], fov: 55 }}>
       <Suspense fallback={null}>
-        {/* Improved Lighting */}
-        <ambientLight intensity={1} />
-        <pointLight position={[20, 40, 20]} intensity={2} />
+        <ambientLight intensity={0.8} />
+        <pointLight position={[20, 30, 20]} intensity={2} />
         <directionalLight intensity={1} position={[5, 15, 10]} castShadow />
-        <spotLight intensity={1.5} position={[-20, 40, -10]} angle={0.3} penumbra={1} castShadow />
+        <spotLight intensity={1.5} position={[-10, 30, -10]} angle={0.2} penumbra={1} castShadow />
         <hemisphereLight intensity={0.5} skyColor={0xffffff} groundColor={0x444444} position={[0, 50, 0]} />
-
-        {/* Load the 3D Model */}
+        <rectAreaLight width={10} height={10} color={0xffffff} intensity={2} position={[10, 15, 0]} lookAt={[0, 0, 0]} />
         <Model url="/groundf.glb" />
-
-        {/* Improved Orbit Controls */}
-        <OrbitControls enableZoom={true} maxDistance={300} minDistance={30} />
+        <OrbitControls enableZoom={true} maxDistance={300} minDistance={20} />
       </Suspense>
     </Canvas>
   );
