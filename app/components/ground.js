@@ -20,7 +20,7 @@ function Model({ url }) {
       scene.position.z += -center.z;
 
       const maxDim = Math.max(size.x, size.y, size.z);
-      scene.scale.setScalar(8 / maxDim);
+      scene.scale.setScalar(30 / maxDim); // Slightly reduced scale
     }
   }, [scene]);
 
@@ -29,7 +29,7 @@ function Model({ url }) {
 
 export default function ModelLoader() {
   return (
-    <Canvas camera={{ position: [0, 80, 80], fov: 55 }}>
+    <Canvas camera={{ position: [0, 50, 80], fov: 15 }}> {/* Slightly zoomed out */}
       <Suspense fallback={null}>
         <ambientLight intensity={0.8} />
         <pointLight position={[20, 30, 20]} intensity={2} />
@@ -38,7 +38,7 @@ export default function ModelLoader() {
         <hemisphereLight intensity={0.5} skyColor={0xffffff} groundColor={0x444444} position={[0, 50, 0]} />
         <rectAreaLight width={10} height={10} color={0xffffff} intensity={2} position={[10, 15, 0]} lookAt={[0, 0, 0]} />
         <Model url="/groundf.glb" />
-        <OrbitControls enableZoom={true} maxDistance={300} minDistance={20} />
+        <OrbitControls enableZoom={true} maxDistance={115} minDistance={5} /> {/* Allows more zooming */}
       </Suspense>
     </Canvas>
   );
